@@ -4,8 +4,12 @@ server:
 spring:
   cloud:
     gateway:
-      mvc: 
+      mvc:
         routes:
+          - id: user-service
+            uri: lb://USER-SERVICE
+            predicates:
+              - Path=/users/**
           - id: operator-service
             uri: lb://OPERATOR-SERVICE
             predicates:
