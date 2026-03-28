@@ -3,9 +3,9 @@ server:
 
 spring:
   rabbitmq:
-    host: rabbitmq-broker
+    host: localhost
 
 eureka:
   client:
     service-url:
-      defaultZone: http://service-registry:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
