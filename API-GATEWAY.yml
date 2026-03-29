@@ -30,3 +30,18 @@ eureka:
 
 jwt:
   secret: "mysecretkeymysecretkeymysecretkey12345"
+
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: User Service
+        url: /users/v3/api-docs
+      - name: Operator Service
+        url: /operators/v3/api-docs
+      - name: Payment Service
+        url: /payment/v3/api-docs
+      - name: Recharge Service
+        url: /recharge/v3/api-docs
